@@ -1,0 +1,31 @@
+// dependencies version and config definitions
+apply from: 'gradle/dependencies.gradle'
+
+// project configurations
+allprojects {
+    group 'com.inburst.server'
+    version '1.0'
+}
+
+subprojects {
+
+    apply plugin: "java"
+    apply plugin: 'idea'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        maven {
+            url 'https://maven-central.storage.googleapis.com'
+        }
+        mavenCentral()
+        mavenLocal()
+        jcenter()
+    }
+
+    dependencies {
+
+        testCompile libs.junit
+    }
+}

@@ -1,0 +1,33 @@
+ext {
+    //used libraries versions
+    libVersions =
+            [
+                    junit             : '4.12',
+                    dagger            : '2.16',
+                    rxjava            : '2.2.0',
+
+            ]
+
+    //used libraries
+    libs = [
+            junit             : "junit:junit:$libVersions.junit",
+            dagger            : "com.google.dagger:dagger:$libVersions.dagger",
+            daggercompiler    : "com.google.dagger:dagger-compiler:$libVersions.dagger",
+            rxjava            : "io.reactivex.rxjava2:rxjava:$libVersions.rxjava"
+    ]
+
+    //configs
+    config = [
+            /*gae: [
+                    port           : [
+                            default: 8880,
+                            api: 8881
+                    ],
+                    defaultJvmFlags: [
+                            '-Dappengine.fullscan.seconds=3',
+                            "-Ddatastore.backing_store=$projectDir/appengine-generated/local_db.bin".toString(),
+                            "-Ddatastore.generated_dir=$projectDir/appengine-generated/".toString()
+                    ]
+            ]*/
+    ]
+}

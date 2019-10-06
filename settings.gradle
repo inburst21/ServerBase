@@ -1,0 +1,4 @@
+rootProject.name = 'ServerBase'
+include 'Entity'
+include 'DataAccess'
+
