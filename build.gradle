@@ -25,7 +25,9 @@ subprojects {
     }
 
     dependencies {
-
+        compile libs.rxjava
+        compile libs.dagger
+        annotationProcessor libs.daggerannos
         testCompile libs.junit
     }
 }

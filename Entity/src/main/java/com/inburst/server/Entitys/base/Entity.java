@@ -1,6 +1,6 @@
 package com.inburst.server.Entitys.base;
 
-public abstract class Entity {
+public class Entity {
     private Integer id;
     private String name;
 
@@ -15,5 +15,13 @@ public abstract class Entity {
     }
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Entity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

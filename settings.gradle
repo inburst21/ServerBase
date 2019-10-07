@@ -1,4 +1,9 @@
 rootProject.name = 'ServerBase'
 include 'Entity'
 include 'DataAccess'
+include 'Data'
+include 'BuisnessInjection'
+include 'Buisness'
+include 'AppCore'
+include 'App'
 
